@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-Regular.eot') format('embedded-opentype'),
+        url('font/Montserrat-Regular.woff2') format('woff2'),
+        url('font/Montserrat-Regular.woff') format('woff'),
+        url('font/Montserrat-Regular.ttf') format('truetype'),
+        url('font/Montserrat-Regular.svg') format('svg'),
+        url('font/Montserrat-Regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('font/SourceSansPro-Bold.eot.eot') format('embedded-opentype'),
+        url('font/SourceSansPro-Bold.woff2') format('woff2'),
+        url('font/SourceSansPro-Bold.woff') format('woff'),
+        url('font/SourceSansPro-Bold.ttf') format('truetype'),
+        url('font/SourceSansPro-Bold.svg') format('svg');
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+h1 {
+    font-family: 'Source Sans Pro';
+    font-size: 48px;
+    color: #02315B;
+    margin: 100px 0 100px 100px;
+}
+
+input[type="image"], img {
+    height : 200px;
+    width : 200px;
+}
+
+div {
+    display: inline-block;
+    margin: 20px;
+}
+div:first-of-type {
+    margin-left: 100px;
+}
+
+div p, button {
+    margin: 8px;
+}
+
+.upgrade {
+    background: #02315B;
+    color: #FFF;
+    outline: none;
+    border-radius: 40px;
+    border: none;
+    height: 25px;
+    width: 100px;
+}
+.upgrade:hover {
+    transform: scale(1.10);
+}
+
+.upgrade:active, .upgrade:focus {
+    top: 50px;
+}
+
+.ballot-box-image {
+    margin-bottom: 70px;
+}

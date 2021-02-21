@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Political Game</title>
+</head>
+<body>
+    <h1>Political Game</h1>
+    <h1 id="vote-number">Vote : </h1>
+    <div class="ballot-box">
+        <input type="image" src="img/vote.png" onclick="add_vote()" class="ballot-box-image">
+        <p>Box Multiplier : <span id="ballot-box-multiplier" >1</span></p>
+        <button onclick="increase_multiplier()" class="upgrade">Upgrade</button>
+    </div>
+    <div class="sarkozy">
+        <img src="img/sarko.png" alt="Nicolas Sarkozy" class="president">
+        <p>Coût : <span id="cost-0">10</span></p>
+        <p>Vote : <span id="vote-0">2</span> (/s)</p>
+        <p>Cumul : <span id="cumul-0">0</span> (/s)</p>
+        <p>Niveau : <span id="lvl-0">0</span></p>
+        <button onclick="president_upgrade(this.id)" id="0" class="upgrade">Upgrade</button>
+    </div>
+    <div class="hollande">
+
+        <img src="img/hollande.png" alt="François Hollande" class="president">
+        <p>Coût : <span id="cost-1">50</span></p>
+        <p>Vote : <span id="vote-1">5</span> (/s)</p>
+        <p>Cumul : <span id="cumul-1">0</span> (/s)</p>
+
+        <p>Niveau : <span id="lvl-1">0</span></p>
+        <button onclick="president_upgrade(this.id)" id="1" class="upgrade">Upgrade</button>
+    </div>
+    <div class="jfk">
+
+        <img src="img/jfk.png" alt="John Fitzgerald Kennedy" class="president">
+        <p>Coût : <span id="cost-2">350</span></p>
+        <p>Vote : <span id="vote-2">25</span> (/s)</p>
+        <p>Cumul : <span id="cumul-2">0</span> (/s)</p>
+        <p>Niveau : <span id="lvl-2">0</span></p>
+        <button onclick="president_upgrade(this.id)" id="2" class="upgrade">Upgrade</button>
+    </div>
+    <div class="trump">
+
+        <img src="img/sarko.png" alt="Donald Trump" class="president">
+        <p>Coût : <span id="cost-3">1000</span></p>
+        <p>Vote : <span id="vote-3">125</span> (/s)</p>
+        <p>Cumul : <span id="cumul-3">0</span> (/s)</p>
+        <p>Niveau : <span id="lvl-3">0</span></p>
+        <button onclick="president_upgrade(this.id)" id="3" class="upgrade">Upgrade</button>
+    </div>
+    <div class="obama">
+
+        <img src="img/obama.png" alt="Barack Obama" class="president">
+        <p>Coût : <span id="cost-4">75</span></p>
+        <p>Vote : <span id="vote-4">0</span> (/s)</p>
+        <p>Cumul : <span id="cumul-4">0</span> (/s)</p>
+        <p>Niveau : <span id="lvl-4">0</span></p>
+        <button onclick="president_upgrade(this.id)" id="4" class="upgrade">Upgrade</button>
+    </div>
+    <div class="bidden">
+
+        <img src="img/sarko.png" alt="Joe Bidden" class="president">
+        <p>Coût : <span id="cost-5">64</span></p>
+        <p>Vote : <span id="vote-5">0</span> (/s)</p>
+        <p>Cumul : <span id="cumul-5">0</span> (/s)</p>
+        <p>Niveau : <span id="lvl-5">0</span></p>
+
+        <button onclick="president_upgrade(this.id)" id="5" class="upgrade">Upgrade</button>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
